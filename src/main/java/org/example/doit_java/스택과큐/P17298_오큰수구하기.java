@@ -18,11 +18,13 @@ public class P17298_오큰수구하기 {
         for (int i = 0; i < N; i++) {
             A[i] = Integer.parseInt(str[i]);
         }
+
         Stack<Integer> myStack = new Stack<>();
         myStack.push(0); // 처음에는 항상 스택이 비어있으므로 최초 값을 push해서 초기화
         for (int i = 1; i < N; i++) { // 0번째는 이미 푸시 했기 때매 1 부터 시작
+            //3 5 2 7
             //스택이 비어 있지 않고, 현재 수열이 스택 top 인덱스가 가리키는 수열보다 클 경우
-            while (!myStack.isEmpty() && A[myStack.peek()] < A[i]) {
+            while (!myStack.isEmpty() && A[myStack.peek()] < A[i]) { // 3  < 5
                 // .peek()은 현재 스택을 top 값을 가져옴
                 ans[myStack.pop()] = A[i]; // 정답 배열에 오큰수를 현재 수열로 저장하기
             }
@@ -36,12 +38,10 @@ public class P17298_오큰수구하기 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         for (int i = 0; i < N; i++) {
             bw.write(ans[i] + " "); // 출력한다
-
-
         }
 
         bw.write("\n");
-        bw.flush();
+        bw.close(); // flush나 close를 해줘야 출력이됨 그전까지는 bw.write를 하면 버퍼에 넣어둠
     }
 
 }

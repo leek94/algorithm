@@ -35,6 +35,7 @@ public class P11003_최솟값찾기 {
             if (mydeque.getFirst().index <= i - L) { // 윈도우 슬라이딩 범위를 벗어나면 앞에 값을 삭제
                 mydeque.removeFirst();
             }
+
             bw.write(mydeque.getFirst().value + " "); // 맨 앞에 있는 값을 출력
         }
         bw.flush();

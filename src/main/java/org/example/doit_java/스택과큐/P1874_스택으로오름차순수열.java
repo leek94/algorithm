@@ -1,4 +1,4 @@
-package org.example.doit_java.투포인터;
+package org.example.doit_java.스택과큐;
 
 import java.util.Scanner;
 import java.util.Stack;

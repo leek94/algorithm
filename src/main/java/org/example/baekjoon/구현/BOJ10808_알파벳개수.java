@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 대문자 A는 65
 // 배열로 만들어서 각각의 값을 읽고 int [26]으로 만든 배열에 값 1씩 추가
 // char 타입은 연산시 int로 자동 변환된다
-public class BOJ10808 {
+public class BOJ10808_알파벳개수 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String S = sc.nextLine();

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // 큐를 사용해서 배포 가능한 날짜를 리턴
-// 순서대로 나오는 값중에 최댓값인 작은 값들은 배포가 안되고 최고로 걸리는 날 배포됨
+// 순서대로 나오는 값중에 최댓값보다 작은 값들은 배포가 안되고 최고로 걸리는 날 배포됨
 
 public class 기능개발 {
     public static void main(String[] args) {

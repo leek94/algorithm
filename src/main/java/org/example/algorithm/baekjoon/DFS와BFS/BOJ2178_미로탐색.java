@@ -3,10 +3,9 @@ package org.example.algorithm.baekjoon.DFS와BFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class 미로탐색 {
+public class BOJ2178_미로탐색 {
 
     static int[][] maze;
     static int N,M;
